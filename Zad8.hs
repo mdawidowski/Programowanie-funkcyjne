@@ -1,1 +1,9 @@
-silnia n = if n < 2 then 1 else n * silnia (n-1)
+-- a)
+append [] m = m
+append (x:xs) m = x:(append xs m)
+
+-- b)
+member x l = x `elem` l
+
+-- c)
+reverse [] (x:xs) = (append [] xs):x
